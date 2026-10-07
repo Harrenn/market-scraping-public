@@ -1,0 +1,39 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python
+# Keep environments local; never commit installed dependencies.
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Browser/editor/system artifacts
+.playwright-mcp/
+playwright-report/
+test-results/
+.vscode/
+.idea/
+.DS_Store
+*.log
+*.tmp
+~$*
+
+# Local inputs, captured evidence and generated datasets
+working/data/
+working/outputs/
+*.xlsx
+*.xls
+*.sqlite*
+*.db
+secrets/
+credentials/
